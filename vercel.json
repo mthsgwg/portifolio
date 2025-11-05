@@ -1,0 +1,19 @@
+{
+  "buildCommand": "pnpm build",
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
+  "functions": {
+    "app/api/send-email/route.ts": {
+      "maxDuration": 10
+    }
+  },
+  "env": {
+    "PNPM_FLAGS": "--shamefully-hoist"
+  },
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  }
+}
